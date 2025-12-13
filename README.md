@@ -50,17 +50,13 @@ The application provides a comprehensive and interactive interface for stock ana
 ---
 
 ## Project Structure
-bursa-stock-dashboard/
-│
-├── app.py # Main Streamlit dashboard
-├── Stock Data.py # Supporting script for price data testing
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-├── images/ # Screenshots and flowchart
-│ ├── dashboard_main.png
-│ ├── volume_financials.png
-│ ├── revenue_grouped.png
-│ └── flowchart.png
+The application follows a structured data pipeline to ensure data consistency and functionality.
+- User Inputs: Accept controls for the stock (e.g., 1023.KL for CIMB), dates, and display options.
+- Fetch Price Data: Retrieve OHLC (Open, High, Low, Close) and Volume data using the yfinance library.
+- Fetch/Load Financial Data: Attempt to get Annual/Quarterly financial data from yfinance, or use the uploaded CSV/XLSX file as a fallback.
+- Data Processing: Calculate Moving Averages, percentage returns, and standardize numeric financial fields.
+- Compute KPIs: Calculate and display key metrics like volatility and period returns.
+- Generate Visuals & Insights: Render interactive Plotly charts (Candlestick, Volume, Bar charts) and display automated managerial insights.
 
 
 ## How to Run the Dashboard
@@ -78,7 +74,8 @@ streamlit run "streamlit app.py"
 The application will automatically open in your web browser, typically at
 http://localhost:8501
 
-Repository Content
+### Repository Content
+
 File Name,                                                Description
 streamlit app.py,    The main Python script containing the Streamlit application logic, data fetching, processing, and visualization.
 Stock Data.py,       A separate script used to test data retrieval and initial plotting of company metadata and closing prices.
