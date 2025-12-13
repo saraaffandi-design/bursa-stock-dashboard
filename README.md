@@ -76,7 +76,8 @@ http://localhost:8501
 
 ### Repository Content
 
-File Name,                                                Description
-streamlit app.py,    The main Python script containing the Streamlit application logic, data fetching, processing, and visualization.
-Stock Data.py,       A separate script used to test data retrieval and initial plotting of company metadata and closing prices.
+File Name: streamlit app.py                                                
+Description: The main Python script containing the Streamlit application logic, data fetching, processing, and visualization.
 
+File Name: Stock Data.py                                                
+Description: A separate script used to test data retrieval and initial plotting of company metadata and closing prices.
