@@ -106,6 +106,7 @@ The application follows a structured data pipeline to ensure data consistency an
 - Compute KPIs: Calculate and display key metrics like volatility and period returns.
 - Generate Visuals & Insights: Render interactive Plotly charts (Candlestick, Volume, Bar charts) and display automated managerial insights.
 
+---
 
 ▶️ How to Run
 
@@ -121,6 +122,8 @@ streamlit run "streamlit app.py"
 
 The application will automatically open in your web browser, typically at
 http://localhost:8501
+
+---
 
 📊 Example Use Cases
 
@@ -144,6 +147,8 @@ http://localhost:8501
 
 Siti Sarah binti Mohd Affandi
 Master in Operations Research & Analytics 
+
+---
 
 ⚠️ Disclaimer
 
