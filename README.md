@@ -1,12 +1,22 @@
-# Bursa Stock Dashboard (CIMB Group 1023.KL)
+🚀 Overview
 
-This project is an interactive Streamlit dashboard developed for visualising Bursa Malaysia stock data and selected financial information. The dashboard retrieves historical stock prices and income statement data from Yahoo Finance using the yfinance library and presents them through interactive charts and key performance indicators.
+This project is an interactive financial analytics dashboard built using Streamlit to analyze Bursa Malaysia stock performance.
 
-This project was developed as part of the SQIT5043 Programming for Analytics course.
+It integrates real-time market data, financial statements, and key performance indicators (KPIs) to support data-driven investment decision-making.
+
+Unlike basic dashboards, this project combines price trends, volatility analysis, and financial performance into a unified analytical tool.
 
 ---
 
-## Project Objectives
+🎯 Problem Statement
+
+Investors and analysts often struggle to interpret large volumes of stock and financial data effectively.
+
+This project addresses that challenge by providing an interactive and intuitive dashboard that transforms raw financial data into actionable insights, enabling better investment and strategic decisions.
+
+---
+
+🎯 Project Objectives
 
 The main objectives of this project are:
 - To visualise historical stock price data including open, high, low, close, and trading volume
@@ -15,7 +25,7 @@ The main objectives of this project are:
 
 ---
 
-## Selected Company
+💰 Selected Company
 
 - **Company:** CIMB Group Holdings Berhad  
 - **Ticker:** 1023.KL  
@@ -25,31 +35,69 @@ CIMB Group was selected due to its relevance as a major financial institution in
 
 ---
 
-## Features
+💡 Key Features
 
-The application provides a comprehensive and interactive interface for stock analysis:
-- Interactive Controls: Users can select the stock Ticker, Date Range, Interval (1d, 1wk, 1mo), and toggle Moving Averages (MA).
-- OHLC Visualization: Displays stock movements using a Candlestick Chart with optional Moving Average overlays (e.g., MA7, MA20).
-- Performance KPIs: Shows essential metrics like Latest Close Price, Period Return, Previous Close % Change, and Annualized Volatility.
-- Financial Data Integration: Automatically fetches annual or quarterly Income Statement data from Yahoo Finance.
-- Custom Financial Input: Includes a file uploader to accept CSV/Excel files for financial data when the online source is incomplete or missing.
-- Financial Charting: Generates bar charts for user-selected financial metrics (like Revenue or Net Income) and a grouped comparison chart.
-- Managerial Insights: Provides simple, auto-generated textual insights based on price and financial trends.
-
-## Technologies Used
-
-- Python
-- Streamlit
-- yfinance (Yahoo Finance API)
-- Pandas
-- NumPy
-- Plotly
-- Matplotlib
-- Draw.io (workflow diagram)
+📊 Market Data Analysis
+- Interactive candlestick chart (OHLC)
+- Historical price trend visualization
+- Adjustable date range and time interval
 
 ---
 
-## Project Structure
+📈 Technical Indicators
+* Moving Averages (MA7, MA20, MA50, MA100)
+* Trend analysis for identifying market direction
+
+---
+
+📉 Risk & Performance Metrics
+* Latest closing price
+* Period return (%)
+* Daily price change (%)
+* Annualized volatility (risk indicator)
+
+---
+
+🧾 Financial Analysis
+* Income statement integration (annual / quarterly)
+* Revenue and net income visualization
+* Support for custom financial data upload (CSV/XLSX)
+
+---
+
+🧠 Managerial Insights
+
+* Automated insights based on:
+* Price trends
+* Volatility
+* Financial performance
+
+---
+
+🛠️ Technologies Used
+
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Plotly
+- yfinance (Yahoo Finance API)
+
+---
+
+🧠 Analytical Value
+
+This project goes beyond basic visualization by combining:
+
+* Descriptive Analytics → understanding price trends
+* Diagnostic Analytics → analyzing financial performance
+* Risk Analysis → evaluating volatility
+
+It demonstrates how data analytics can be applied in a financial context to support investment decisions and strategic analysis.
+
+---
+
+📂 Project Structure
 The application follows a structured data pipeline to ensure data consistency and functionality.
 - User Inputs: Accept controls for the stock (e.g., 1023.KL for CIMB), dates, and display options.
 - Fetch Price Data: Retrieve OHLC (Open, High, Low, Close) and Volume data using the yfinance library.
@@ -59,14 +107,14 @@ The application follows a structured data pipeline to ensure data consistency an
 - Generate Visuals & Insights: Render interactive Plotly charts (Candlestick, Volume, Bar charts) and display automated managerial insights.
 
 
-## How to Run the Dashboard
+▶️ How to Run
 
-### 1. Install dependencies
+1. Install dependencies
 Install the required Python packages using pip:
 
 pip install streamlit yfinance plotly pandas numpy openpyxl
 
-### 2. Run the Application
+2. Run the Application
 Navigate to the directory containing streamlit app.py and execute the following command:
 
 streamlit run "streamlit app.py"
@@ -74,10 +122,30 @@ streamlit run "streamlit app.py"
 The application will automatically open in your web browser, typically at
 http://localhost:8501
 
-### Repository Content
+📊 Example Use Cases
 
-File Name: streamlit app.py                                                
-Description: The main Python script containing the Streamlit application logic, data fetching, processing, and visualization.
+* Analyze stock performance over time
+* Evaluate risk using volatility metrics
+* Compare financial performance across periods
+* Support data-driven investment decisions
 
-File Name: Stock Data.py                                                
-Description: A separate script used to test data retrieval and initial plotting of company metadata and closing prices.
+---
+
+🔥 Future Improvements
+
+* Stock comparison (multi-ticker analysis)
+* Advanced technical indicators (RSI, MACD)
+* Predictive modeling for price forecasting
+* Deployment as a web application
+
+---
+
+👩‍💻 Author
+
+Siti Sarah binti Mohd Affandi
+Master in Operations Research & Analytics 
+
+⚠️ Disclaimer
+
+- This dashboard is developed for educational and analytical purposes only.
+ It does not constitute financial or investment advice.
